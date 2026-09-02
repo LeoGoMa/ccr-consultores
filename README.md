@@ -1,7 +1,9 @@
 # CCR Consultores Contables — sitio web
 
+**En línea:** https://leogoma.github.io/ccr-consultores/
+
 Sitio estático: **HTML + CSS + JavaScript puro**. No necesita instalar nada, ni Node, ni compilar.
-Para verlo: doble clic en `index.html`.
+Para verlo en local: doble clic en `index.html`.
 
 ## Archivos
 
@@ -12,7 +14,7 @@ Para verlo: doble clic en `index.html`.
 | `nosotros.html` | Los tres socios y cómo trabaja el despacho |
 | `contacto.html` | Datos, mapa y formulario |
 | `styles.css` | Todo el diseño (colores y tipografías al inicio, en `:root`) |
-| `script.js` | Menú móvil, animaciones de scroll, parallax y correo del formulario |
+| `script.js` | Menú móvil, animaciones de scroll y correo del formulario |
 | `img/` | 7 fotografías (Unsplash, uso comercial libre) |
 
 ## Datos que trae cargados
@@ -30,8 +32,7 @@ Para verlo: doble clic en `index.html`.
   quieta mientras la banda se desliza encima. Es puro CSS, sin JavaScript: `clip` recorta la
   imagen fija sin anclarla. No pongas `transform`, `filter` ni `will-change` en `.parallax`
   o la foto dejaría de ser fija. En móvil se desactiva sola (consume batería y salta en iOS).
-- **Fotos enmarcadas:** llevan `data-speed="0.18"`. Más alto = se mueve más; el sobrante de
-  la imagen (200 px por lado) aguanta hasta `0.2`.
+- **Fotos enmarcadas:** quietas, sin efecto. Llenan su marco con la clase `fill`.
 - Todo se apaga solo si el sistema del visitante pide menos movimiento, y si el
   JavaScript falla el contenido se ve igual (nunca queda invisible).
 
@@ -65,12 +66,18 @@ No hay servidor, así que al enviar se abre el correo del visitante con el mensa
 `ccr_contadores@gmail.com`. Si más adelante quieren que llegue solo, se conecta gratis con Formspree
 o Web3Forms cambiando dos líneas.
 
-## Subirlo a internet gratis (sin comprar dominio)
+## Publicación
 
-**Opción rápida — Netlify Drop:** entrar a `app.netlify.com/drop`, arrastrar la carpeta completa.
-En segundos da una dirección tipo `ccr-consultores.netlify.app`. Gratis y sin cuenta para la primera vez.
+Está en GitHub Pages, sirviendo la rama `main` desde la raíz:
+**https://leogoma.github.io/ccr-consultores/**
 
-**Opción estable — GitHub Pages:** subir la carpeta a un repositorio, entrar a Settings → Pages,
-elegir la rama `main`. Queda en `usuario.github.io/ccr-consultores`.
+Para actualizarlo, basta con subir los cambios:
 
-En ambos casos el dominio propio (`ccrconsultores.com.mx`) se puede conectar después sin rehacer nada.
+```bash
+git add -A
+git commit -m "descripcion del cambio"
+git push
+```
+
+En un minuto queda publicado. Si algún día compran el dominio `ccrconsultores.com.mx`,
+se conecta desde Settings → Pages → Custom domain sin rehacer nada.
