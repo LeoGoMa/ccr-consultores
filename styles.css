@@ -450,11 +450,14 @@ a.row-item:hover .go .arrow{ transform:translateX(4px); }
 
 .socios{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns:repeat(4, 1fr);
   gap:1px;
   background:var(--line);
   border:1px solid var(--line);
 }
+/* 4 -> 2 -> 1 columnas: nunca queda un socio solo en su fila */
+@media (max-width: 1060px){ .socios{ grid-template-columns:repeat(2, 1fr); } }
+@media (max-width: 600px){  .socios{ grid-template-columns:1fr; } }
 .socio{
   background:var(--paper-2);
   padding:clamp(26px, 3vw, 38px);

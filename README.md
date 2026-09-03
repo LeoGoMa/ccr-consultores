@@ -22,7 +22,11 @@ Para verlo en local: doble clic en `index.html`.
 - Teléfono: **477 123 4567**
 - Correo: **ccr_contadores@gmail.com**
 - Dirección: **Blvd. Adolfo López Mateos 1802, piso 3, Col. Jardines del Moral, C.P. 37160, León, Gto.** (inventada — cambiar por la real cuando exista)
-- Socios: Mario Alberto Campos Rocha (Director General y Auditor), Juan Pablo Chávez Acosta (Consultor Financiero), Marco Antonio Rodríguez Cruz (Consultor Contable)
+- Socios (4):
+  - Mario Alberto Campos Rocha — Director General y Auditor
+  - Juan Pablo Chávez Acosta — Consultor Financiero
+  - Marco Antonio Rodríguez Cruz — Consultor Contable
+  - Alejandro Rodríguez Paredes — Consultor Contable
 
 ## Animaciones y parallax
 
